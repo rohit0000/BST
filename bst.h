@@ -2,7 +2,7 @@ struct node{
     int value_i;
     struct node *left_p;
     struct node *right_p;
-    struct node * parent_p;
+    struct node *parent_p;
 };
 class bst{
 private:
