@@ -33,7 +33,7 @@ int bst::insert(int item_i){
     temp->right_p = NULL;
     temp->parent_p = NULL;
     temp->value_i = item_i;
-    int found = 0;
+//    int found = 0;
     if(root == NULL){
         root = temp;
     }
@@ -42,14 +42,14 @@ int bst::insert(int item_i){
         currentNode = root;
         currentNode->parent_p = NULL;
 
-        while(found == 0){
+        while(1){
             currentNode->parent_p = currentNode;
             if(item_i < currentNode->value_i){
                 currentNode = currentNode->left_p;
 
                 if(currentNode == NULL){
                     currentNode->parent_p->left_p = temp;
-                    return;
+                    return 0;
                 }
             }
             else{
@@ -57,9 +57,14 @@ int bst::insert(int item_i){
 
                 if(currentNode == NULL){
                     currentNode->parent_p->right_p = temp;
-                    return;
+                    return 0;
                 }
             }
         }
     }
+    return -1;
+}
+
+int bst::remove(int item_i){
+
 }
