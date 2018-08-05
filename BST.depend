@@ -1,4 +1,17 @@
 # depslib dependency file v1.0
-1514140574 source:c:\users\rohit\documents\programming\bst\main.cpp
+1533455297 source:c:\users\rohit\documents\programming\bst\main.cpp
+	<iostream>
+	"bst.h"
+	<string>
+	<cstdlib>
+
+1533455335 source:c:\users\rohit\documents\programming\bst\bst.cpp
+	<iostream>
+	"bst.h"
+	"queue.h"
+
+1533439423 c:\users\rohit\documents\programming\bst\bst.h
+
+1533445084 c:\users\rohit\documents\programming\bst\queue.h
 	<iostream>
 
