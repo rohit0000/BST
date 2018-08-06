@@ -1,6 +1,5 @@
 #include<iostream>
 #include "bst.h"
-#include "queue.h"
 using namespace std;
 
 bst::bst(){
